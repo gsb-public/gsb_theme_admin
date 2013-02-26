@@ -3,9 +3,12 @@ description = Stanford theme based on Seven theme
 package = Core
 version = VERSION
 core = 7.x
-stylesheets[screen][] = css/reset.css
-stylesheets[screen][] = css/style.css
+base theme = seven
+
+stylesheets[screen][] = css/custom.css
+
 settings[shortcut_module_link] = 1
+
 regions[content] = Content
 regions[help] = Help
 regions[page_top] = Page top

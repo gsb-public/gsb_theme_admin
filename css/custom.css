@@ -1,0 +1,188 @@
+/* editor styles */
+
+/* ctools */
+.modal-content .field-widget-options-buttons input {
+ float:left;
+}
+
+.modal-content .field-widget-options-buttons .form-type-radio label {
+ clear:none;
+ padding-left:20px;
+}
+
+#modal-content .form-actions input {
+ margin:10px 0 0 10px;
+}
+
+#modal-content .fieldset-wrapper {
+ padding-top:3px;
+}
+
+#modal-content fieldset legend {
+ height:1.5em;
+ line-height:1.1em;
+}
+
+#modal-content .fieldset-wrapper {
+ margin-top:1.2em;
+}
+
+.modal-content .field-multiple-table {
+ width:100%;
+}
+
+.modal-content .field-multiple-table  th label {
+ padding-left:8px;
+ margin-bottom:0;
+}
+
+.modal-content .field-multiple-table .form-submit {
+ margin-top:5px;
+}
+
+#modal-content .widget-preview .fieldset-wrapper {
+  margin-top: 2.4em;
+}
+
+/* node add */
+.page-node-add .form-type-radio input {
+ float:left;
+ margin-right:5px;
+ margin-top:3px;
+}
+
+.page-node-add-gsb-person .field-name-field-first-name,
+.page-node-add-gsb-person .field-name-field-url {
+ float:left;
+ margin-right:20px;
+}
+
+.page-node-add-gsb-person .field-name-field-company {
+ clear:both;
+}
+
+.page-node-add-gsb-person .field-name-field-sunetid {
+ float:left;
+}
+
+/* video */
+
+#modal-content .widget-preview .fieldset-wrapper .gsb-video-image a,
+#modal-content .widget-preview .fieldset-wrapper .video-play-icon {
+ display:none;
+}
+
+
+#modal-content .widget-preview .media-youtube-preview-wrapper,
+#modal-content .widget-preview .media-youtube-outer-wrapper {
+ width:100% !important;
+ height: auto !important;
+ margin:0;
+}
+
+#modal-content .widget-preview .rendered-video iframe {
+ width:100% !important;
+ margin:0;
+}
+
+/* spotlight */
+
+#modal-content .widget-preview .spotlight-story {
+ margin-left:288px;
+ clear:none;
+}
+
+#modal-content .widget-preview .spotlight {
+ overflow:hidden;
+}
+
+#modal-content .widget-preview .spotlight a.show-more {
+ margin-left:18px;
+}
+
+#modal-content .widget-preview .spotlight-image {
+  float: left;
+}
+
+/* social */
+
+#modal-content .widget-preview .twitter-feed {
+ background: #c1dbd9;
+}
+
+#modal-content .widget-preview .twitter-feed-source:after {
+ content: 'Save and reload the page to see the tweets.';
+ color:#202020;
+ display:block;
+ margin-top:9px;
+}
+
+#modal-content .widget-preview .social-block-link {
+margin-top: 15px;
+}
+
+#modal-content .widget-preview .social-icon {
+ display:none;
+}
+
+/* media widget */
+
+.media-widget .preview {
+ float:left;
+ margin-bottom:13px;
+}
+
+.media-widget a {
+border: 1px solid #CCC;
+margin-bottom: .5em;
+margin-right: 1em;
+font: bold 12px/32px 'Open Sans', 'Lucida Sans', 'Lucida Grande', verdana sans-serif;
+text-decoration: none;
+height: 33px;
+color: #666;
+cursor: pointer;
+outline: none;
+-moz-border-radius: 3px;
+-khtml-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background: #FAFAFA;
+background-image: linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%);
+background-image: -o-linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%);
+background-image: -moz-linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%);
+background-image: -webkit-linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%);
+background-image: -ms-linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%);
+background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #E9EAEC), color-stop(1, #FAFAFA) );
+-webkit-box-shadow: 0 3px 3px 0 #D2D2D2;
+-moz-box-shadow: 0 3px 3px 0 #d2d2d2;
+box-shadow: 0 3px 3px 0 #D2D2D2;
+padding: 0 13px 1px;
+display:block;
+float:left;
+}
+
+.media-widget a.ctools-modal-media-file-edit {
+ display:none !important;
+}
+
+#media-browser-tabset a.button.fake-cancel {
+ display:none !important;
+}
+
+#media-browser-tabset .form-actions {
+  padding-top: 25px;
+}
+
+#edit-upload-ajax-wrapper {
+  float: left;
+  margin-right: 15px;
+}
+
+.view-gsb-media-browser {
+  clear: both;
+}
+
+#media-browser-tabset .form-item-embed-code {
+  float: left;
+  margin-right: 10px;
+}

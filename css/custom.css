@@ -186,3 +186,10 @@ float:left;
   float: left;
   margin-right: 10px;
 }
+
+#media-browser-tabset ul.tabs.primary .ui-state-active a,
+#media-browser-tabset ul.tabs.primary .ui-state-active a:hover{
+background: #fff;
+cursor: default;
+color: #000;
+}

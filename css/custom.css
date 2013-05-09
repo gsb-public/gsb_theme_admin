@@ -203,3 +203,7 @@ color: #000;
 	font-weight: bold
 }
 
+.node-msx_fellows-form #edit-field-year .fieldset-legend:after {
+  content: '*';
+  color:#f00
+}

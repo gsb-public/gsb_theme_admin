@@ -197,3 +197,9 @@ color: #000;
 .content > #gsb-media-center-add-image-upload {
  padding-left:15px;
 }
+
+
+.field-name-field-witl-archive label{
+	font-weight: bold
+}
+

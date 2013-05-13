@@ -165,10 +165,6 @@ float:left;
  display:none !important;
 }
 
-#media-browser-tabset a.button.fake-cancel {
- display:none !important;
-}
-
 #media-browser-tabset .form-actions {
   padding-top: 25px;
 }

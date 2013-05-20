@@ -190,7 +190,9 @@ cursor: default;
 color: #000;
 }
 
-.content > #gsb-media-center-add-image-upload {
+.content > #gsb-media-center-add-image-upload,
+.content > #gsb-media-center-add-files-and-docs-upload,
+.content > #gsb-media-center-add-video-upload {
  padding-left:15px;
 }
 

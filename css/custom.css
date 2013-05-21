@@ -169,6 +169,10 @@ float:left;
   padding-top: 25px;
 }
 
+#media-browser-tabset #branding h1 {
+  height: auto;
+}
+
 #edit-upload-ajax-wrapper {
   float: left;
   margin-right: 15px;

@@ -161,10 +161,6 @@ display:block;
 float:left;
 }
 
-.media-widget a.ctools-modal-media-file-edit {
- display:none !important;
-}
-
 #media-browser-tabset .form-actions {
   padding-top: 25px;
 }

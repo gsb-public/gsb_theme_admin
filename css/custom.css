@@ -205,3 +205,106 @@ color: #000;
   content: '*';
   color:#f00
 }
+
+/* workbench pages */
+
+.my-workbench {
+  position: relative;
+}
+.my-workbench .create-menu-title {
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.my-workbench  .create-menu {
+  float: left;
+  width: 33%;
+  padding: 0;
+  margin: 28px 0 35px 0;
+}
+.my-workbench  .create-menu li {
+  width: 47%;
+  margin-right: 2%;
+}
+.my-workbench .right h3 {
+  margin-top: 0;
+}
+.page-admin-workbench .views-exposed-form .form-item {
+  padding: 0;
+}
+.page-admin-workbench .views-exposed-form .description {
+  margin: 0;
+}
+.page-admin-workbench .views-exposed-form .views-exposed-widget,
+.page-admin-workbench .views-exposed-form .bef-secondary-options .form-item {
+  padding-right:20px;
+}
+.page-admin-workbench .views-exposed-form .form-item-title .form-text,
+.page-admin-workbench .views-exposed-form .form-item-name .form-text {
+  width: 300px;
+}
+.page-admin-workbench .views-exposed-form .form-item-alias .form-text {
+  width: 160px;
+}
+.page-admin-workbench .views-exposed-form .form-item-nid .form-text {
+  width: 80px;
+}
+.page-admin-workbench .views-exposed-form .form-item-access-id .form-select,
+.page-admin-workbench .views-exposed-form .form-item-type .form-select {
+  width: 110px;
+}
+.page-admin-workbench .views-exposed-form .form-item-published .form-select {
+  width: 62px;
+}
+.page-admin-workbench .views-exposed-form .views-widget-filter-secondary {
+  clear:both;
+  width: 100%;
+  padding-top: 0;
+}
+.page-admin-workbench .views-exposed-form .form-wrapper {
+  border: none;
+  margin:0;
+  padding-top: 18px;
+}
+.page-admin-workbench .views-exposed-form  .fieldset-wrapper {
+  padding: 0;
+}
+.page-admin-workbench .views-exposed-form .form-wrapper  .fieldset-legend {
+  margin: 0;
+  line-height: normal;
+  padding-left: 10px;
+  background-position: 0 50%;
+}
+.page-admin-workbench .views-exposed-form  .fieldset-title {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: none;
+}
+.page-admin-workbench .views-exposed-form .bef-secondary-options .form-item,
+.page-admin-workbench .views-exposed-form #edit-date-filter-min-wrapper,
+.page-admin-workbench .views-exposed-form #edit-date-filter-max-wrapper {
+  float: left;
+}
+.page-admin-workbench .views-exposed-form .form-item-uid-revision .form-text {
+  width: 266px;
+}
+.page-admin-workbench .views-exposed-form .form-type-date-popup {
+  margin:0;
+}
+.page-admin-workbench .views-exposed-form .form-type-date-popup .form-item {
+  padding: 0;
+}
+.page-admin-workbench .views-exposed-form #edit-date-filter-min-wrapper .form-text,
+.page-admin-workbench .views-exposed-form #edit-date-filter-max-wrapper .form-text {
+  width: 104px;
+  margin: 0;
+}
+.page-admin-workbench .views-exposed-form .views-submit-button {
+  clear: both;
+  padding: 7px 0 42px 0;
+}
+.page-admin-workbench .views-exposed-form .views-submit-button .form-submit {
+  margin: 0;
+}

@@ -6,6 +6,7 @@ core = 7.x
 base theme = seven
 
 stylesheets[screen][] = css/custom.css
+scripts[]= js/custom.js
 
 settings[shortcut_module_link] = 1
 

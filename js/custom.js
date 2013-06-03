@@ -3,7 +3,7 @@
     attach: function (context, settings) {
       var title = $('#views-exposed-form-gsb-workbench-recent-content-page-1 .fieldset-title'),
             title1 ='More filters',
-            title2 = 'Less filters';
+            title2 = 'Fewer filters';
       if (title.parents('legend').next().is(':visible')) {
         title.html(title2);
       } else {

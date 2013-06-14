@@ -1,5 +1,9 @@
 /* editor styles */
 
+input.form-text[disabled='disabled'] {
+  background-color: #ddd;
+}
+
 /* ctools */
 .modal-content .field-widget-options-buttons input {
  float:left;

@@ -312,3 +312,44 @@ color: #000;
 .page-admin-workbench .views-exposed-form .views-submit-button .form-submit {
   margin: 0;
 }
+/* panelizer layout styles */
+.panels-dnd .front-slider-pane,
+.panels-dnd .main-wrapper {
+  width: 66.666%;
+}
+.panels-dnd .column.first,
+.panels-dnd .column.second,
+.panels-dnd .column.third,
+.panels-dnd .front-sidebar-pane,
+.panels-dnd .front-slider-pane,
+.panels-dnd .main-wrapper,
+.panels-dnd .main-middle .column-first,
+.panels-dnd .main-middle .column-second,
+.panels-dnd .inner-sidebar-wrapper {
+  float: left;
+}
+.panels-dnd .main-middle .column-first,
+.panels-dnd .main-middle .column-second {
+  width: 50%;
+}
+.panels-dnd .front-sidebar-pane,
+.panels-dnd .inner-sidebar-wrapper {
+  width: 33.333%;
+}
+.panels-dnd .column.first,
+.panels-dnd .column.second,
+.panels-dnd .column.third,
+.panels-dnd .front-panel-feature-one,
+.panels-dnd .front-panel-feature-two,
+.panels-dnd .front-panel-feature-three {
+  float: left;
+  width: 33.333%;
+}
+#panels-panel-context-edit-content .form-actions {
+  clear: left;
+  margin-top: 0;
+}
+#panelizer-edit-content-form .form-submit,
+#panels-panel-context-edit-content .form-submit {
+  margin-top: 1em;
+}

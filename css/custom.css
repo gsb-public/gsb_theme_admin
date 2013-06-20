@@ -353,3 +353,8 @@ color: #000;
 #panels-panel-context-edit-content .form-submit {
   margin-top: 1em;
 }
+/* styles for the wysiwyg body */
+body.cke_show_borders table td {
+  border: 1px solid #ccc;
+  padding: 1px 2px;
+}

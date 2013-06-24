@@ -349,9 +349,16 @@ color: #000;
   clear: left;
   margin-top: 0;
 }
-#panelizer-edit-content-form .form-submit,
-#panels-panel-context-edit-content .form-submit {
-  margin-top: 1em;
+#panels-dnd-main .panel-region {
+  margin-bottom: 15px
+}
+#panels-dnd-main .inner-content-wrapper .main-wrapper,
+#panels-dnd-main .inner-content-wrapper .column-first {
+  padding-right: 15px;
+  box-sizing:border-box;
+}
+#panels-dnd-main .main-footer{
+  clear: left
 }
 /* styles for the wysiwyg body */
 body.cke_show_borders table td {

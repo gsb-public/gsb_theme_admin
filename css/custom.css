@@ -365,3 +365,12 @@ body.cke_show_borders table td {
   border: 1px solid #ccc;
   padding: 1px 2px;
 }
+
+/* Form items need bottom spacing */
+.form-wrapper {
+  margin-bottom: 1em;
+}
+
+form .field-multiple-table th.field-label {
+  padding-left: 10px;
+}

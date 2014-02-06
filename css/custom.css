@@ -374,3 +374,24 @@ body.cke_show_borders table td {
 form .field-multiple-table th.field-label {
   padding-left: 10px;
 }
+
+/* Publication CT*/
+#node_publication_form_group_publication_date .field-name-field-year-of-publication {
+  margin-bottom: 0;
+}
+
+#node_publication_form_group_publication_date .field-name-field-year-of-publication fieldset {
+  border: 0;
+  margin-bottom: 0;
+}
+
+#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend {
+  text-transform: capitalize;
+}
+
+#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend,
+#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-wrapper,
+#node_publication_form_group_publication_date .field-name-field-year-of-publication .date-padding {
+  margin-bottom: 0;
+  padding: 0;
+}

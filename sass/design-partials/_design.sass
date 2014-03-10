@@ -1,143 +1,124 @@
-// Existing design implementation
+// Previous editor styles
 
-// editor styles
 input.form-text[disabled='disabled']
-  background-color: #ddd
+  background-color: #dddddd
 
 // ctools
-.modal-content .field-widget-options-buttons input
-  float: left
+.modal-content .field-widget-options-buttons
+  input
+    float: left
+  .form-type-radio label
+    clear: none
+    padding-left: 20px
 
-.modal-content .field-widget-options-buttons .form-type-radio label
-  clear: none
-  padding-left: 20px
-
-#modal-content .form-actions input
-  margin: 10px 0 0 10px
-
-#modal-content .fieldset-wrapper
-  padding-top: 3px
-
-#modal-content fieldset legend
-  height: 1.5em
-  line-height: 1.1em
-
-#modal-content .fieldset-wrapper
-  margin-top: 1.2em
+#modal-content
+  .form-actions input
+    margin: 10px 0 0 10px
+  .fieldset-wrapper
+    padding-top: 3px
+  fieldset legend
+    height: 1.5em
+    line-height: 1.1em
+  .fieldset-wrapper
+    margin-top: 1.2em
 
 .modal-content .field-multiple-table
   width: 100%
-
-.modal-content .field-multiple-table  th label
-  padding-left: 8px
-  margin-bottom: 0
-
-.modal-content .field-multiple-table .form-submit
-  margin-top: 5px
+  th label
+    padding-left: 8px
+    margin-bottom: 0
+  .form-submit
+    margin-top: 5px
 
 #modal-content .widget-preview .fieldset-wrapper
   margin-top: 2.4em
 
-// Node add
+// node add
 .page-node-add .form-type-radio input
   float: left
   margin-right: 5px
   margin-top: 3px
 
-.page-node-add-gsb-person .field-name-field-first-name,
-.page-node-add-gsb-person .field-name-field-url
-  float: left
-  margin-right: 20px
-
-.page-node-add-gsb-person .field-name-field-company
-  clear:  both
-
-.page-node-add-gsb-person .field-name-field-sunetid
-  float: left
+.page-node-add-gsb-person
+  .field-name-field-first-name, .field-name-field-url
+    float: left
+    margin-right: 20px
+  .field-name-field-company
+    clear: both
+  .field-name-field-sunetid
+    float: left
 
 // video
-#modal-content .widget-preview .fieldset-wrapper .gsb-video-image a,
-#modal-content .widget-preview .fieldset-wrapper .video-play-icon
-  display: none
-
-#modal-content .widget-preview .media-youtube-preview-wrapper,
-#modal-content .widget-preview .media-youtube-outer-wrapper
-  width: 100% !important
-  height: auto !important
-  margin: 0
-
-#modal-content .widget-preview .rendered-video iframe
-  width: 100% !important
-  margin: 0
-
-// spotlight
-#modal-content .widget-preview .spotlight-story
-  margin-left: 288px
-  clear: none
-
-#modal-content .widget-preview .spotlight
-  overflow: hidden
-
-#modal-content .widget-preview .spotlight a.show-more
-  margin-left: 18px
-
-#modal-content .widget-preview .spotlight-image
-  float: left
-
-// social
-#modal-content .widget-preview .twitter-feed
-  background: #c1dbd9
-
-#modal-content .widget-preview .twitter-feed-source:after
-  content: "Save and reload the page to see the tweets."
-  color: #202020
-  display: block
-  margin-top: 9px
-
-#modal-content .widget-preview .social-block-link
-  margin-top: 15px
-
-#modal-content .widget-preview .social-icon
-  display: none
+#modal-content .widget-preview
+  .fieldset-wrapper
+    .gsb-video-image a, .video-play-icon
+      display: none
+  .media-youtube-preview-wrapper, .media-youtube-outer-wrapper
+    width: 100% !important
+    height: auto !important
+    margin: 0
+  .rendered-video iframe
+    width: 100% !important
+    margin: 0
+  .spotlight-story
+    margin-left: 288px
+    clear: none
+  .spotlight
+    overflow: hidden
+    a.show-more
+      margin-left: 18px
+  .spotlight-image
+    float: left
+  .twitter-feed
+    background: #c1dbd9
+  .twitter-feed-source:after
+    content: "Save and reload the page to see the tweets."
+    color: #202020
+    display: block
+    margin-top: 9px
+  .social-block-link
+    margin-top: 15px
+  .social-icon
+    display: none
 
 // media widget
-.media-widget .preview
-  float: left
-  margin-bottom: 13px
+.media-widget
+  .preview
+    float: left
+    margin-bottom: 13px
+  a
+    border: 1px solid #cccccc
+    margin-bottom: .5em
+    margin-right: 1em
+    font: bold 12px/32px "Open Sans", "Lucida Sans", "Lucida Grande", verdana, sans-serif
+    text-decoration: none
+    height: 33px
+    color: #666666
+    cursor: pointer
+    outline: none
+    -moz-border-radius: 3px
+    -khtml-border-radius: 3px
+    -webkit-border-radius: 3px
+    border-radius: 3px
+    background: #fafafa
+    background-image: linear-gradient(bottom, #e9eaec 0%, #fafafa 100%)
+    background-image: -o-linear-gradient(bottom, #e9eaec 0%, #fafafa 100%)
+    background-image: -moz-linear-gradient(bottom, #e9eaec 0%, #fafafa 100%)
+    background-image: -webkit-linear-gradient(bottom, #e9eaec 0%, #fafafa 100%)
+    background-image: -ms-linear-gradient(bottom, #e9eaec 0%, #fafafa 100%)
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e9eaec), color-stop(1, #fafafa))
+    -webkit-box-shadow: 0 3px 3px 0 #d2d2d2
+    -moz-box-shadow: 0 3px 3px 0 #d2d2d2
+    box-shadow: 0 3px 3px 0 #d2d2d2
+    padding: 0 13px 1px
+    display: block
+    float: left
 
-.media-widget a
-  border: 1px solid #CCC
-  margin-bottom: .5em
-  margin-right: 1em
-  font: bold 12px/32px "Open Sans", "Lucida Sans", "Lucida Grande", verdana, sans-serif
-  text-decoration: none
-  height: 33px
-  color: #666
-  cursor: pointer
-  outline: none
-  -moz-border-radius: 3px
-  -khtml-border-radius: 3px
-  -webkit-border-radius: 3px
-  border-radius: 3px
-  background: #FAFAFA
-  background-image: linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%)
-  background-image: -o-linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%)
-  background-image: -moz-linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%)
-  background-image: -webkit-linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%)
-  background-image: -ms-linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%)
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #E9EAEC), color-stop(1, #FAFAFA) )
-  -webkit-box-shadow: 0 3px 3px 0 #D2D2D2
-  -moz-box-shadow: 0 3px 3px 0 #d2d2d2
-  box-shadow: 0 3px 3px 0 #D2D2D2
-  padding: 0 13px 1px
-  display: block
-  float: left
-
-#media-browser-tabset .form-actions
-  padding-top: 25px
-
-#media-browser-tabset #branding h1
-  height: auto
+#media-browser-tabset
+  .form-actions
+    padding-top: 25px
+  #branding h1
+    height: auto
 
 #edit-upload-ajax-wrapper
   float: left
@@ -146,181 +127,147 @@ input.form-text[disabled='disabled']
 .view-gsb-media-browser
   clear: both
 
-#media-browser-tabset .form-item-embed-code
-  float: left
-  margin-right: 10px
+#media-browser-tabset
+  .form-item-embed-code
+    float: left
+    margin-right: 10px
+  ul.tabs.primary .ui-state-active a
+    background: #ffffff
+    cursor: default
+    color: #000000
+    &:hover
+      background: #ffffff
+      cursor: default
+      color: #000000
 
-#media-browser-tabset ul.tabs.primary .ui-state-active a,
-#media-browser-tabset ul.tabs.primary .ui-state-active a:hover
-  background: #fff
-  cursor: default
-  color: #000
-
-.content > #gsb-media-center-add-image-upload,
-.content > #gsb-media-center-add-files-and-docs-upload,
-.content > #gsb-media-center-add-video-upload
-  padding-left: 15px
+.content >
+  #gsb-media-center-add-image-upload, #gsb-media-center-add-files-and-docs-upload, #gsb-media-center-add-video-upload
+    padding-left: 15px
 
 .field-name-field-witl-archive label
   font-weight: bold
 
 .node-msx_fellows-form #edit-field-year .fieldset-legend:after
   content: "*"
-  color: #f00
+  color: red
 
 // workbench pages
 .my-workbench
   position: relative
+  .create-menu-title
+    font-weight: bold
+    font-size: 16px
+    position: absolute
+    top: 0
+    left: 0
+  .create-menu
+    float: left
+    width: 33%
+    padding: 0
+    margin: 28px 0 35px 0
+    li
+      width: 47%
+      margin-right: 2%
+  .right h3
+    margin-top: 0
 
-.my-workbench .create-menu-title
-  font-weight: bold
-  font-size: 16px
-  position: absolute
-  top: 0
-  left: 0
-
-.my-workbench .create-menu
-  float: left
-  width: 33%
-  padding: 0
-  margin: 28px 0 35px 0
-
-.my-workbench .create-menu li
-  width: 47%
-  margin-right: 2%
-
-.my-workbench .right h3
-  margin-top: 0
-
-.page-admin-workbench .views-exposed-form .form-item
-  padding: 0
-
-.page-admin-workbench .views-exposed-form .description
-  margin: 0
-
-.page-admin-workbench .views-exposed-form .views-exposed-widget,
-.page-admin-workbench .views-exposed-form .bef-secondary-options .form-item
-  padding-right: 20px
-
-.page-admin-workbench .views-exposed-form .form-item-title .form-text,
-.page-admin-workbench .views-exposed-form .form-item-name .form-text
-  width: 300px
-
-.page-admin-workbench .views-exposed-form .form-item-alias .form-text
-  width: 160px
-
-.page-admin-workbench .views-exposed-form .form-item-nid .form-text
-  width: 80px
-
-.page-admin-workbench .views-exposed-form .form-item-access-id .form-select,
-.page-admin-workbench .views-exposed-form .form-item-type .form-select
-  width: 110px
-
-.page-admin-workbench .views-exposed-form .form-item-published .form-select
-  width: 62px
-
-.page-admin-workbench .views-exposed-form .views-widget-filter-secondary
-  clear: both
-  width: 100%
-  padding-top: 0
-
-.page-admin-workbench .views-exposed-form .form-wrapper
-  border: none
-  margin: 0
-  padding-top: 18px
-
-.page-admin-workbench .views-exposed-form  .fieldset-wrapper
-  padding: 0
-
-.page-admin-workbench .views-exposed-form .form-wrapper  .fieldset-legend
-  margin: 0
-  line-height: normal
-  padding-left: 10px
-  background-position: 0 50%
-
-.page-admin-workbench .views-exposed-form  .fieldset-title
-  font-size: 12px
-  font-weight: normal
-  text-transform: none
-
-.page-admin-workbench .views-exposed-form .bef-secondary-options .form-item,
-.page-admin-workbench .views-exposed-form #edit-date-filter-min-wrapper,
-.page-admin-workbench .views-exposed-form #edit-date-filter-max-wrapper
-  float: left
-
-.page-admin-workbench .views-exposed-form .form-item-uid-revision .form-text
-  width: 266px
-
-.page-admin-workbench .views-exposed-form .form-type-date-popup
-  margin: 0
-
-.page-admin-workbench .views-exposed-form .form-type-date-popup .form-item
-  padding: 0
-
-.page-admin-workbench .views-exposed-form #edit-date-filter-min-wrapper .form-text,
-.page-admin-workbench .views-exposed-form #edit-date-filter-max-wrapper .form-text
-  width: 104px
-  margin: 0
-
-.page-admin-workbench .views-exposed-form .views-submit-button
-  clear: both
-  padding: 7px 0 42px 0
-
-.page-admin-workbench .views-exposed-form .views-submit-button .form-submit
-  margin: 0
+.page-admin-workbench .views-exposed-form
+  .form-item
+    padding: 0
+  .description
+    margin: 0
+  .views-exposed-widget, .bef-secondary-options .form-item
+    padding-right: 20px
+  .form-item-title .form-text, .form-item-name .form-text
+    width: 300px
+  .form-item-alias .form-text
+    width: 160px
+  .form-item-nid .form-text
+    width: 80px
+  .form-item-access-id .form-select, .form-item-type .form-select
+    width: 110px
+  .form-item-published .form-select
+    width: 62px
+  .views-widget-filter-secondary
+    clear: both
+    width: 100%
+    padding-top: 0
+  .form-wrapper
+    border: none
+    margin: 0
+    padding-top: 18px
+  .fieldset-wrapper
+    padding: 0
+  .form-wrapper .fieldset-legend
+    margin: 0
+    line-height: normal
+    padding-left: 10px
+    background-position: 0 50%
+  .fieldset-title
+    font-size: 12px
+    font-weight: normal
+    text-transform: none
+  .bef-secondary-options .form-item, #edit-date-filter-min-wrapper, #edit-date-filter-max-wrapper
+    float: left
+  .form-item-uid-revision .form-text
+    width: 266px
+  .form-type-date-popup
+    margin: 0
+    .form-item
+      padding: 0
+  #edit-date-filter-min-wrapper .form-text, #edit-date-filter-max-wrapper .form-text
+    width: 104px
+    margin: 0
+  .views-submit-button
+    clear: both
+    padding: 7px 0 42px 0
+    .form-submit
+      margin: 0
 
 // panelizer layout styles
-.panels-dnd .front-slider-pane,
-.panels-dnd .main-wrapper
-  width: 66.666%
-
-.panels-dnd .column.first,
-.panels-dnd .column.second,
-.panels-dnd .column.third,
-.panels-dnd .front-sidebar-pane,
-.panels-dnd .front-slider-pane,
-.panels-dnd .main-wrapper,
-.panels-dnd .main-middle .column-first,
-.panels-dnd .main-middle .column-second,
-.panels-dnd .inner-sidebar-wrapper
-  float: left
-
-.panels-dnd .main-middle .column-first,
-.panels-dnd .main-middle .column-second
-  width: 50%
-
-.panels-dnd .front-sidebar-pane,
-.panels-dnd .inner-sidebar-wrapper
-  width: 33.333%
-
-.panels-dnd .column.first,
-.panels-dnd .column.second,
-.panels-dnd .column.third,
-.panels-dnd .front-panel-feature-one,
-.panels-dnd .front-panel-feature-two,
-.panels-dnd .front-panel-feature-three
-  float: left
-  width: 33.333%
+.panels-dnd
+  .front-slider-pane, .main-wrapper
+    width: 66.666%
+  .column
+    &.first, &.second, &.third
+      float: left
+  .front-sidebar-pane, .front-slider-pane, .main-wrapper
+    float: left
+  .main-middle
+    .column-first, .column-second
+      float: left
+  .inner-sidebar-wrapper
+    float: left
+  .main-middle
+    .column-first, .column-second
+      width: 50%
+  .front-sidebar-pane, .inner-sidebar-wrapper
+    width: 33.333%
+  .column
+    &.first, &.second, &.third
+      float: left
+      width: 33.333%
+  .front-panel-feature-one, .front-panel-feature-two, .front-panel-feature-three
+    float: left
+    width: 33.333%
 
 #panels-panel-context-edit-content .form-actions
   clear: left
   margin-top: 0
 
-#panels-dnd-main .panel-region
-  margin-bottom: 15px
-
-#panels-dnd-main .inner-content-wrapper .main-wrapper,
-#panels-dnd-main .inner-content-wrapper .column-first
-  padding-right: 15px
-  box-sizing: border-box
-
-
-#panels-dnd-main .main-footer
-  clear: left
+#panels-dnd-main
+  .panel-region
+    margin-bottom: 15px
+  .inner-content-wrapper
+    .main-wrapper, .column-first
+      padding-right: 15px
+      box-sizing: border-box
+  .main-footer
+    clear: left
 
 // styles for the wysiwyg body
 body.cke_show_borders table td
-  border: 1px solid #ccc
+  border: 1px solid #cccccc
   padding: 1px 2px
 
 // Form items need bottom spacing
@@ -333,16 +280,13 @@ form .field-multiple-table th.field-label
 // Publication CT
 #node_publication_form_group_publication_date .field-name-field-year-of-publication
   margin-bottom: 0
-
-#node_publication_form_group_publication_date .field-name-field-year-of-publication fieldset
-  border: 0
-  margin-bottom: 0
-
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend
-  text-transform: capitalize
-
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend,
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-wrapper,
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .date-padding
-  margin-bottom: 0
-  padding: 0
+  fieldset
+    border: 0
+    margin-bottom: 0
+  .fieldset-legend
+    text-transform: capitalize
+    margin-bottom: 0
+    padding: 0
+  .fieldset-wrapper, .date-padding
+    margin-bottom: 0
+    padding: 0

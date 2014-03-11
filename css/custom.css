@@ -407,3 +407,8 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty div.ctools-modal-content .resizable-textarea {
   margin-left: 0;
 }
+
+/* Faculty modal */
+.page-node-edit.node-type-faculty #modalBackdrop {
+  background-color: #000 !important;
+}

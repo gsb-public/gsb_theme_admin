@@ -376,22 +376,34 @@ form .field-multiple-table th.field-label {
 }
 
 /* Publication CT*/
-#node_publication_form_group_publication_date .field-name-field-year-of-publication {
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication {
   margin-bottom: 0;
 }
 
-#node_publication_form_group_publication_date .field-name-field-year-of-publication fieldset {
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication fieldset {
   border: 0;
   margin-bottom: 0;
 }
 
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend {
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend {
   text-transform: capitalize;
 }
 
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend,
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-wrapper,
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .date-padding {
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend,
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-wrapper,
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication .date-padding {
   margin-bottom: 0;
   padding: 0;
+}
+
+/* Faculty changes */
+
+/* Remove ctools float in modal on fields*/
+.page-node-edit.node-type-faculty div.ctools-modal-content .form-item label {
+  float: none;
+  width: auto;
+}
+
+.page-node-edit.node-type-faculty div.ctools-modal-content .resizable-textarea {
+  margin-left: 0;
 }

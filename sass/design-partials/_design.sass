@@ -278,7 +278,7 @@ form .field-multiple-table th.field-label
   padding-left: 10px
 
 // Publication CT
-#node_publication_form_group_publication_date .field-name-field-year-of-publication
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication
   margin-bottom: 0
   fieldset
     border: 0
@@ -290,3 +290,14 @@ form .field-multiple-table th.field-label
   .fieldset-wrapper, .date-padding
     margin-bottom: 0
     padding: 0
+
+// Faculty changes
+// Remove ctools float in modal on fields
+.page-node-edit.node-type-faculty div.ctools-modal-content
+  .form-item label
+    float: none
+    width: auto
+  .resizable-textarea
+    margin-left: 0
+  #modalBackdrop
+    background-color: #000 !important

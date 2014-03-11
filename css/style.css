@@ -329,19 +329,30 @@ form .field-multiple-table th.field-label {
   padding-left: 10px;
 }
 
-#node_publication_form_group_publication_date .field-name-field-year-of-publication {
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication {
   margin-bottom: 0;
 }
-#node_publication_form_group_publication_date .field-name-field-year-of-publication fieldset {
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication fieldset {
   border: 0;
   margin-bottom: 0;
 }
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend {
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend {
   text-transform: capitalize;
   margin-bottom: 0;
   padding: 0;
 }
-#node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-wrapper, #node_publication_form_group_publication_date .field-name-field-year-of-publication .date-padding {
+.node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-wrapper, .node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication .date-padding {
   margin-bottom: 0;
   padding: 0;
+}
+
+.page-node-edit.node-type-faculty div.ctools-modal-content .form-item label {
+  float: none;
+  width: auto;
+}
+.page-node-edit.node-type-faculty div.ctools-modal-content .resizable-textarea {
+  margin-left: 0;
+}
+.page-node-edit.node-type-faculty div.ctools-modal-content #modalBackdrop {
+  background-color: black !important;
 }

@@ -396,16 +396,14 @@ form .field-multiple-table th.field-label {
   padding: 0;
 }
 
-/* Faculty changes */
-
-/* Remove ctools float in modal on fields*/
-.page-node-edit.node-type-faculty div.ctools-modal-content .form-item label {
-  float: none;
-  width: auto;
+/* Faculty modal */
+.page-node-edit.node-type-faculty #modalBackdrop {
+  background-color: #000 !important;
 }
 
-.page-node-edit.node-type-faculty div.ctools-modal-content .resizable-textarea {
-  margin-left: 0;
+.page-node-edit.node-type-faculty #node_publication_form_group_publication_date .fieldset-legend {
+  margin-top: 0;
+  padding-left: 0;
 }
 
 /* Faculty modal */

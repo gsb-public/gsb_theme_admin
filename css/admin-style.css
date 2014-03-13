@@ -371,3 +371,29 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty #modal-content .form-item-title input {
   font-size: 11px;
 }
+
+#faculty-node-form ul.horizontal-tabs-list {
+  background-color: #f2f2f2;
+}
+#faculty-node-form ul.horizontal-tabs-list li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+#faculty-node-form ul.horizontal-tabs-list li a:hover {
+  background: #d5d5d5;
+}
+#faculty-node-form ul.horizontal-tabs-list li:hover {
+  background: #d5d5d5;
+}
+#faculty-node-form ul.horizontal-tabs-list li.selected {
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+#faculty-node-form ul.horizontal-tabs-list li.selected a:hover {
+  background: white;
+}
+#faculty-node-form ul.horizontal-tabs-list li.selected a {
+  color: #222222;
+}

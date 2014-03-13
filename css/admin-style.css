@@ -353,18 +353,21 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty div.ctools-modal-content .resizable-textarea {
   margin-left: 0;
 }
-.page-node-edit.node-type-faculty div.ctools-modal-content #modalBackdrop {
-  background-color: black !important;
-}
 .page-node-edit.node-type-faculty div.ctools-modal-content #node_publication_form_group_publication_date .fieldset-legend {
   margin-top: 0;
   padding-left: 0;
 }
 
+.page-node-edit.node-type-faculty #modalBackdrop {
+  background-color: black !important;
+}
 .page-node-edit.node-type-faculty .form-item {
   margin: 0;
   padding: 0;
 }
 .page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header {
   margin-bottom: 20px;
+}
+.page-node-edit.node-type-faculty #modal-content .form-item-title input {
+  font-size: 11px;
 }

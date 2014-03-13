@@ -302,13 +302,14 @@ form .field-multiple-table th.field-label
     width: auto
   .resizable-textarea
     margin-left: 0
-  #modalBackdrop
-    background-color: #000 !important
   #node_publication_form_group_publication_date .fieldset-legend
     margin-top: 0
     padding-left: 0
 
 .page-node-edit.node-type-faculty
+  // Modal color
+  #modalBackdrop
+    background-color: #000 !important
   // Reduce spacing between fields
   .form-item
     margin: 0
@@ -316,3 +317,6 @@ form .field-multiple-table th.field-label
   // Spacing for create new links
   .view-display-id-eva_field_form .view-header
     margin-bottom: 20px
+  // Reduce title font size
+  #modal-content .form-item-title input
+    font-size: 11px

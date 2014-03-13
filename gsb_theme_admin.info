@@ -6,7 +6,7 @@ core = 7.x
 base theme = seven
 
 ; Stylesheets
-stylesheets[screen][] = css/style.css
+stylesheets[screen][] = css/admin-style.css
 
 ; JavaScripts
 scripts[]= js/custom.js

@@ -360,3 +360,7 @@ form .field-multiple-table th.field-label {
   margin-top: 0;
   padding-left: 0;
 }
+
+.page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header {
+  margin-bottom: 20px;
+}

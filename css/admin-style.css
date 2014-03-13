@@ -361,6 +361,10 @@ form .field-multiple-table th.field-label {
   padding-left: 0;
 }
 
+.page-node-edit.node-type-faculty .form-item {
+  margin: 0;
+  padding: 0;
+}
 .page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header {
   margin-bottom: 20px;
 }

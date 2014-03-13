@@ -356,3 +356,7 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty div.ctools-modal-content #modalBackdrop {
   background-color: black !important;
 }
+.page-node-edit.node-type-faculty div.ctools-modal-content #node_publication_form_group_publication_date .fieldset-legend {
+  margin-top: 0;
+  padding-left: 0;
+}

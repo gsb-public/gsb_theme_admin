@@ -318,15 +318,17 @@ form .field-multiple-table th.field-label
   .view-display-id-eva_field_form .view-header
     margin-bottom: 20px
 
-  #modal-content
+  .modal-content
     // Reduce title font size
     .form-item-title input
       font-size: 11px
     // Reduce fieldset width
-    fieldset
+    fieldset,
+    .field-multiple-table
       max-width: 727px
-  .modal-content .field-multiple-table
-    max-width: 727px
+    // Labels on background
+    .fieldset-legend
+      margin-top: 0 !important
 
 // Restyle tabs
 #faculty-node-form

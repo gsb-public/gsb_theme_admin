@@ -368,14 +368,15 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header {
   margin-bottom: 20px;
 }
-.page-node-edit.node-type-faculty #modal-content .form-item-title input {
+.page-node-edit.node-type-faculty .modal-content .form-item-title input {
   font-size: 11px;
 }
-.page-node-edit.node-type-faculty #modal-content fieldset {
-  max-width: 727px;
-}
+.page-node-edit.node-type-faculty .modal-content fieldset,
 .page-node-edit.node-type-faculty .modal-content .field-multiple-table {
   max-width: 727px;
+}
+.page-node-edit.node-type-faculty .modal-content .fieldset-legend {
+  margin-top: 0 !important;
 }
 
 #faculty-node-form ul.horizontal-tabs-list {

@@ -371,6 +371,12 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty #modal-content .form-item-title input {
   font-size: 11px;
 }
+.page-node-edit.node-type-faculty #modal-content fieldset {
+  max-width: 50%;
+}
+.page-node-edit.node-type-faculty .modal-content .field-multiple-table {
+  max-width: 50%;
+}
 
 #faculty-node-form ul.horizontal-tabs-list {
   background-color: #f2f2f2;

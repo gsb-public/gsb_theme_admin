@@ -12,3 +12,13 @@ function gsb_theme_admin_form_panelizer_edit_content_form_alter(&$form, &$form_s
 function gsb_theme_admin_file_icon($variables) {
   return '';
 }
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node_form.
+ */
+function gsb_theme_admin_form_node_form_alter(&$form, &$form_state, $form_id) {
+  // Make the title field 140 characters wide.
+  if (isset($form['title'])) {
+    $form['title']['#size'] = 140;
+  }
+}

@@ -372,10 +372,10 @@ form .field-multiple-table th.field-label {
   font-size: 11px;
 }
 .page-node-edit.node-type-faculty #modal-content fieldset {
-  max-width: 50%;
+  max-width: 727px;
 }
 .page-node-edit.node-type-faculty .modal-content .field-multiple-table {
-  max-width: 50%;
+  max-width: 727px;
 }
 
 #faculty-node-form ul.horizontal-tabs-list {

@@ -369,10 +369,11 @@ form .field-multiple-table th.field-label {
   margin-bottom: 20px;
 }
 .page-node-edit.node-type-faculty .modal-content .form-item-title input {
-  font-size: 11px;
+  font-size: 11px !important;
 }
 .page-node-edit.node-type-faculty .modal-content fieldset,
-.page-node-edit.node-type-faculty .modal-content .field-multiple-table {
+.page-node-edit.node-type-faculty .modal-content .field-multiple-table,
+.page-node-edit.node-type-faculty .modal-content .tabledrag-toggle-weight-wrapper {
   max-width: 727px;
 }
 .page-node-edit.node-type-faculty .modal-content .fieldset-legend {

@@ -490,6 +490,34 @@ form .field-multiple-table th.field-label {
   margin-left: 5px;
   vertical-align: top;
 }
+.page-node-edit.node-type-faculty .field-name-field-place-of-publication,
+.page-node-edit.node-type-faculty .field-name-field-publisher,
+.page-node-edit.node-type-faculty .field-name-field-volume-number,
+.page-node-edit.node-type-faculty .field-name-field-issue-number,
+.page-node-edit.node-type-faculty .field-name-field-page-count,
+.page-node-edit.node-type-faculty .group-pub-link-pdf .fieldset-wrapper > div,
+.page-node-add.node-type-faculty .field-name-field-place-of-publication,
+.page-node-add.node-type-faculty .field-name-field-publisher,
+.page-node-add.node-type-faculty .field-name-field-volume-number,
+.page-node-add.node-type-faculty .field-name-field-issue-number,
+.page-node-add.node-type-faculty .field-name-field-page-count,
+.page-node-add.node-type-faculty .group-pub-link-pdf .fieldset-wrapper > div {
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: top;
+}
+.page-node-edit.node-type-faculty .field-name-field-place-of-publication .description,
+.page-node-add.node-type-faculty .field-name-field-place-of-publication .description {
+  max-width: 327px;
+}
+.page-node-edit.node-type-faculty .group-pub-link-pdf .form-submit,
+.page-node-add.node-type-faculty .group-pub-link-pdf .form-submit {
+  height: 24px !important;
+  line-height: 26px !important;
+  margin-bottom: 0 !important;
+  margin-left: 5px;
+  vertical-align: top;
+}
 
 #faculty-node-form ul.horizontal-tabs-list {
   background-color: #f2f2f2;

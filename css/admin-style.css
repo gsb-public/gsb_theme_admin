@@ -403,6 +403,18 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty .modal-content .fieldset-legend {
   margin-top: 0 !important;
 }
+.page-node-edit.node-type-faculty .field-name-field-salutation,
+.page-node-edit.node-type-faculty .field-name-field-first-name,
+.page-node-edit.node-type-faculty .field-name-field-middle-name,
+.page-node-edit.node-type-faculty .field-name-field-last-name,
+.page-node-edit.node-type-faculty .field-name-field-suffix-name {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+}
+.page-node-edit.node-type-faculty .field-name-field-middle-name .description {
+  max-width: 327px;
+}
 
 #faculty-node-form ul.horizontal-tabs-list {
   background-color: #f2f2f2;

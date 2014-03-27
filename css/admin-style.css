@@ -407,13 +407,18 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty .field-name-field-first-name,
 .page-node-edit.node-type-faculty .field-name-field-middle-name,
 .page-node-edit.node-type-faculty .field-name-field-last-name,
-.page-node-edit.node-type-faculty .field-name-field-suffix-name {
+.page-node-edit.node-type-faculty .field-name-field-suffix-name,
+.page-node-edit.node-type-faculty .field-name-field-role,
+.page-node-edit.node-type-faculty .field-name-field-years {
   display: inline-block;
   vertical-align: top;
   margin-right: 12px;
 }
 .page-node-edit.node-type-faculty .field-name-field-middle-name .description {
   max-width: 327px;
+}
+.page-node-edit.node-type-faculty #field-greater-university-affil-values .form-submit {
+  display: block;
 }
 
 #faculty-node-form ul.horizontal-tabs-list {

@@ -358,17 +358,21 @@ form .field-multiple-table th.field-label {
   padding-left: 0;
 }
 
-.page-node-edit.node-type-faculty #modalBackdrop {
+.page-node-edit.node-type-faculty #modalBackdrop,
+.page-node-add.node-type-faculty #modalBackdrop {
   background-color: black !important;
 }
-.page-node-edit.node-type-faculty .form-item {
+.page-node-edit.node-type-faculty .form-item,
+.page-node-add.node-type-faculty .form-item {
   margin: 0;
   padding: 0;
 }
-.page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header {
+.page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header,
+.page-node-add.node-type-faculty .view-display-id-eva_field_form .view-header {
   margin-bottom: 20px;
 }
-.page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header a {
+.page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header a,
+.page-node-add.node-type-faculty .view-display-id-eva_field_form .view-header a {
   background: #ededed;
   border: 1px solid #e4e4e4;
   border-bottom: 1px solid #b4b4b4;
@@ -386,21 +390,27 @@ form .field-multiple-table th.field-label {
   text-align: center;
   text-decoration: none;
 }
-.page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header a:active {
+.page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header a:active,
+.page-node-add.node-type-faculty .view-display-id-eva_field_form .view-header a:active {
   background: #666666;
   color: white;
   border-color: #555555;
   text-shadow: #222222 0 -1px 0;
 }
-.page-node-edit.node-type-faculty .modal-content .form-item-title input {
+.page-node-edit.node-type-faculty .modal-content .form-item-title input,
+.page-node-add.node-type-faculty .modal-content .form-item-title input {
   font-size: 11px !important;
 }
 .page-node-edit.node-type-faculty .modal-content fieldset,
 .page-node-edit.node-type-faculty .modal-content .field-multiple-table,
-.page-node-edit.node-type-faculty .modal-content .tabledrag-toggle-weight-wrapper {
+.page-node-edit.node-type-faculty .modal-content .tabledrag-toggle-weight-wrapper,
+.page-node-add.node-type-faculty .modal-content fieldset,
+.page-node-add.node-type-faculty .modal-content .field-multiple-table,
+.page-node-add.node-type-faculty .modal-content .tabledrag-toggle-weight-wrapper {
   max-width: 727px;
 }
-.page-node-edit.node-type-faculty .modal-content .fieldset-legend {
+.page-node-edit.node-type-faculty .modal-content .fieldset-legend,
+.page-node-add.node-type-faculty .modal-content .fieldset-legend {
   margin-top: 0 !important;
 }
 .page-node-edit.node-type-faculty .field-name-field-salutation,
@@ -409,15 +419,24 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty .field-name-field-last-name,
 .page-node-edit.node-type-faculty .field-name-field-suffix-name,
 .page-node-edit.node-type-faculty .field-name-field-role,
-.page-node-edit.node-type-faculty .field-name-field-years {
+.page-node-edit.node-type-faculty .field-name-field-years,
+.page-node-add.node-type-faculty .field-name-field-salutation,
+.page-node-add.node-type-faculty .field-name-field-first-name,
+.page-node-add.node-type-faculty .field-name-field-middle-name,
+.page-node-add.node-type-faculty .field-name-field-last-name,
+.page-node-add.node-type-faculty .field-name-field-suffix-name,
+.page-node-add.node-type-faculty .field-name-field-role,
+.page-node-add.node-type-faculty .field-name-field-years {
   display: inline-block;
   vertical-align: top;
   margin-right: 12px;
 }
-.page-node-edit.node-type-faculty .field-name-field-middle-name .description {
+.page-node-edit.node-type-faculty .field-name-field-middle-name .description,
+.page-node-add.node-type-faculty .field-name-field-middle-name .description {
   max-width: 327px;
 }
-.page-node-edit.node-type-faculty #field-greater-university-affil-values .form-submit {
+.page-node-edit.node-type-faculty #field-greater-university-affil-values .form-submit,
+.page-node-add.node-type-faculty #field-greater-university-affil-values .form-submit {
   display: block;
 }
 .page-node-edit.node-type-faculty .field-name-field-place-of-publication,
@@ -425,15 +444,23 @@ form .field-multiple-table th.field-label {
 .page-node-edit.node-type-faculty .field-name-field-volume-number,
 .page-node-edit.node-type-faculty .field-name-field-issue-number,
 .page-node-edit.node-type-faculty .field-name-field-page-count,
-.page-node-edit.node-type-faculty .group-pub-link-pdf .fieldset-wrapper > div {
+.page-node-edit.node-type-faculty .group-pub-link-pdf .fieldset-wrapper > div,
+.page-node-add.node-type-faculty .field-name-field-place-of-publication,
+.page-node-add.node-type-faculty .field-name-field-publisher,
+.page-node-add.node-type-faculty .field-name-field-volume-number,
+.page-node-add.node-type-faculty .field-name-field-issue-number,
+.page-node-add.node-type-faculty .field-name-field-page-count,
+.page-node-add.node-type-faculty .group-pub-link-pdf .fieldset-wrapper > div {
   display: inline-block;
   margin-right: 12px;
   vertical-align: top;
 }
-.page-node-edit.node-type-faculty .field-name-field-place-of-publication .description {
+.page-node-edit.node-type-faculty .field-name-field-place-of-publication .description,
+.page-node-add.node-type-faculty .field-name-field-place-of-publication .description {
   max-width: 327px;
 }
-.page-node-edit.node-type-faculty .group-pub-link-pdf .form-submit {
+.page-node-edit.node-type-faculty .group-pub-link-pdf .form-submit,
+.page-node-add.node-type-faculty .group-pub-link-pdf .form-submit {
   height: 24px !important;
   line-height: 26px !important;
   margin-bottom: 0 !important;

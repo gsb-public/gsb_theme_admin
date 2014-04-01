@@ -21,4 +21,6 @@ function gsb_theme_admin_form_node_form_alter(&$form, &$form_state, $form_id) {
   if (isset($form['title'])) {
     $form['title']['#size'] = 140;
   }
+  $form['#attached']['js'][] = drupal_get_path('theme', 'gsb_theme_admin') . '/js/libs/jquery.formobserver.js';
+  $form['#attached']['js'][] = drupal_get_path('theme', 'gsb_theme_admin') . '/js/editing_message.js';
 }

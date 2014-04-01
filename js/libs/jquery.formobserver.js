@@ -21,6 +21,9 @@
         var f = $(this);
         var is = f.find(':input');
         f.FormObserve_save();
+        if (!opt.changeClass) {
+          return;
+        }
         setInterval(function(){
           is.each(function(){
             var node = $(this);

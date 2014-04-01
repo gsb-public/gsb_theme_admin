@@ -17,7 +17,8 @@
 
       var fs = $(this);
       fs.each(function(){
-        this.reset();
+        // @todo This line causes problems with any form elements updated via AJAX.
+        // this.reset();
         var f = $(this);
         var is = f.find(':input');
         f.FormObserve_save();

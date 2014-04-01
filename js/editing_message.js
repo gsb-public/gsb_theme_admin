@@ -9,4 +9,10 @@
     }
   };
 
+  /**
+   * Prevent tabledrag from showing a message.
+   */
+  Drupal.theme.prototype.tableDragChangedWarning = function () {
+  }
+
 }(jQuery));

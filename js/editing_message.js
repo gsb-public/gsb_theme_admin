@@ -3,15 +3,29 @@
   Drupal.behaviors.editingMessage = {
     attach: function () {
       var $form = $('form.node-form');
-      $form.FormObserve({
-        changeClass: false,
-        msg: Drupal.t("You've made changes on one or more tabs. Click 'Save and Publish' to save all changes!")
+      // Track changes to all input elements.
+      $form.find(':input').not('.gsb-form-message-optout').change(function () {
+        $form.data('changed', true);
+      });
+      // Submitting a form ignores all changes.
+      $form.submit(function () {
+        $(this).data('changed', false);
       });
 
-      // Allow submit buttons to bypass the message.
-      $form.submit(function () {
-        $(this).FormObserve_save();
-      })
+      // If the form has been changed but not submitted, confirm leaving.
+      function editingBeforeUnload (e){
+        if ($form.data('changed')) {
+          e = e || window.event;
+          e.returnValue = Drupal.t("You've made changes on one or more tabs. Click 'Save and Publish' to save all changes!");
+        }
+      }
+
+      if (window.attachEvent) {
+        window.attachEvent('onbeforeunload', editingBeforeUnload);
+      }
+      else if (window.addEventListener) {
+        window.addEventListener('beforeunload', editingBeforeUnload, true);
+      }
     }
   };
 

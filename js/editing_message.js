@@ -3,10 +3,20 @@
   Drupal.behaviors.editingMessage = {
     attach: function () {
       var $form = $('form.node-form');
-      // Track changes to all input elements.
-      $form.find(':input').not('.gsb-form-message-optout').change(function () {
-        $form.data('changed', true);
-      });
+
+      function markAsChanged () {
+        if (!$form.data('changed')) {
+          $form.data('changed', true);
+        }
+      }
+
+      // Track changes and input to all input elements.
+      $form.find(':input').not('.gsb-form-message-optout').once()
+        .on('change input', markAsChanged)
+        // Additionally, track clicks on "remove" buttons.
+        .filter("[data-gsb-form-type='remove_button']")
+          .on('mousedown', markAsChanged);
+
       // Submitting a form ignores all changes.
       $form.submit(function () {
         $(this).data('changed', false);

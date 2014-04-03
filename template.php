@@ -23,3 +23,23 @@ function gsb_theme_admin_form_node_form_alter(&$form, &$form_state, $form_id) {
   }
   $form['#attached']['js'][] = drupal_get_path('theme', 'gsb_theme_admin') . '/js/editing_message.js';
 }
+
+/**
+ * #process callback for all managed file elements.
+ */
+function gsb_theme_admin_managed_file_process($element, &$form_state) {
+  // If there is a remove button, mark it with a data attribute.
+  if (isset($element['remove_button'])) {
+    $element['remove_button']['#attributes']['data-gsb-form-type'] = 'remove_button';
+  }
+  return $element;
+}
+
+/**
+ * Implements hook_element_info_alter().
+ */
+function gsb_theme_admin_element_info_alter(&$type) {
+  if (isset($type['managed_file'])) {
+    $type['managed_file']['#process'][] = 'gsb_theme_admin_managed_file_process';
+  }
+}

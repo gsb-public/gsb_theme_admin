@@ -35,4 +35,11 @@
   Drupal.theme.prototype.tableDragChangedWarning = function () {
   }
 
+  /**
+   * When a row is moved via tabledrag, mark the form as changed.
+   */
+  Drupal.tableDrag.prototype.row.prototype.onSwap = function (swappedRow) {
+    $(swappedRow).closest('form').data('changed', true);
+  };
+
 }(jQuery));

@@ -22,6 +22,13 @@ function gsb_theme_admin_form_node_form_alter(&$form, &$form_state, $form_id) {
     $form['title']['#size'] = 140;
   }
   $form['#attached']['js'][] = drupal_get_path('theme', 'gsb_theme_admin') . '/js/editing_message.js';
+
+  // Add a hidden element to track if the form has changed, to persist through
+  // validation.
+  $form['gsb_has_changed'] = array(
+    '#type' => 'hidden',
+    '#default_value' => FALSE,
+  );
 }
 
 /**

@@ -4,6 +4,12 @@
     attach: function () {
       var $form = $('form.node-form');
 
+      // If the form had changed before a submission, mark it as changed now.
+      var $persistChangedValue = $form.find("[name='gsb_has_changed']");
+      if ($persistChangedValue.val()) {
+        $form.data('changed', true);
+      }
+
       function markAsChanged () {
         if (!$form.data('changed')) {
           $form.data('changed', true);
@@ -17,8 +23,13 @@
         .filter("[data-gsb-form-type='remove_button']")
           .on('mousedown', markAsChanged);
 
-      // Submitting a form ignores all changes.
       $form.submit(function () {
+        // If this form has been changed, persist that value.
+        if ($(this).data('changed')) {
+          $persistChangedValue.val(true);
+        }
+
+        // Allow the form submission to proceed.
         $(this).data('changed', false);
       });
 

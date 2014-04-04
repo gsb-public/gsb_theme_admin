@@ -23,6 +23,33 @@ input.form-text[disabled='disabled'] {
 #modal-content .fieldset-wrapper {
   margin-top: 1.2em;
 }
+#modal-content .widget-preview .fieldset-wrapper {
+  margin-top: 2.4em;
+}
+#modal-content .form-submit {
+  cursor: pointer;
+  padding: 4px 17px;
+  color: #5a5a5a;
+  text-align: center;
+  font: normal 1.077em/1 "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+#modal-content .form-submit:hover {
+  background: #fafafa;
+  background-image: -moz-linear-gradient(bottom, #e9eaec 0%, #fafafa 100%);
+  background-image: -o-linear-gradient(bottom, #e9eaec 0%, #fafafa 100%);
+  background-image: -webkit-linear-gradient(bottom, #e9eaec 0%, #fafafa 100%);
+  background-image: linear-gradient(to top, #e9eaec 0%, #fafafa 100%);
+}
 
 .modal-content .field-multiple-table {
   width: 100%;
@@ -33,10 +60,6 @@ input.form-text[disabled='disabled'] {
 }
 .modal-content .field-multiple-table .form-submit {
   margin-top: 5px;
-}
-
-#modal-content .widget-preview .fieldset-wrapper {
-  margin-top: 2.4em;
 }
 
 .page-node-add .form-type-radio input {

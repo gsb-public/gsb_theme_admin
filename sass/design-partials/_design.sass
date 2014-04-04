@@ -11,6 +11,7 @@ input.form-text[disabled='disabled']
     clear: none
     padding-left: 20px
 
+// Panopoly modals
 #modal-content
   .form-actions input
     margin: 10px 0 0 10px
@@ -21,6 +22,26 @@ input.form-text[disabled='disabled']
     line-height: 1.1em
   .fieldset-wrapper
     margin-top: 1.2em
+  .widget-preview .fieldset-wrapper
+    margin-top: 2.4em
+  // Override panopoly styles
+  .form-submit
+    cursor: pointer
+    padding: 4px 17px
+    color: #5A5A5A
+    text-align: center
+    font: normal 1.077em/1 "Lucida Grande", Verdana, sans-serif
+    border: 1px solid #E4E4E4
+    border-bottom: 1px solid #B4B4B4
+    border-left-color: #D2D2D2
+    border-right-color: #D2D2D2
+    +box-shadow(none)
+    +border-radius(20px)
+    &:hover
+      background: #FAFAFA
+      +background-image(linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%))
+
+
 
 .modal-content .field-multiple-table
   width: 100%
@@ -29,9 +50,6 @@ input.form-text[disabled='disabled']
     margin-bottom: 0
   .form-submit
     margin-top: 5px
-
-#modal-content .widget-preview .fieldset-wrapper
-  margin-top: 2.4em
 
 // node add
 .page-node-add .form-type-radio input
@@ -371,7 +389,7 @@ form .field-multiple-table th.field-label
   // Greater Stanford University Affiliations submit button
   #field-greater-university-affil-values .form-submit
     display: block
-  
+
   // Publication fields alignment
   // .field-name-field-pub-book-title,
   .field-name-field-place-of-publication,

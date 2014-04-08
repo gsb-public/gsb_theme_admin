@@ -313,19 +313,17 @@ form .field-multiple-table th.field-label
 // Faculty changes
 ////////////////////
 
-// Remove ctools float in modal on fields
-.page-node-edit.node-type-faculty div.ctools-modal-content
-  .form-item label
-    float: none
-    width: auto
-  .resizable-textarea
-    margin-left: 0
-  #node_publication_form_group_publication_date .fieldset-legend
-    margin-top: 0
-    padding-left: 0
-
 .page-node-edit.node-type-faculty,
-.page-node-add.node-type-faculty
+.page-node-add-faculty
+  div.ctools-modal-content
+    .form-item label
+      float: none
+      width: auto
+    .resizable-textarea
+      margin-left: 0
+    #node_publication_form_group_publication_date .fieldset-legend
+      margin-top: 0
+      padding-left: 0
   // Modal color
   #modalBackdrop
     background-color: #000 !important
@@ -389,7 +387,7 @@ form .field-multiple-table th.field-label
   // Greater Stanford University Affiliations submit button
   #field-greater-university-affil-values .form-submit
     display: block
-  
+
   // Publication fields alignment
   // .field-name-field-pub-book-title,
   .field-name-field-place-of-publication,

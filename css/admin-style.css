@@ -3,11 +3,11 @@ input.form-text[disabled='disabled'] {
 }
 
 .modal-content .field-widget-options-buttons input {
-  float: left;
+  vertical-align: text-top;
 }
 .modal-content .field-widget-options-buttons .form-type-radio label {
-  clear: none;
-  padding-left: 20px;
+  font-size: 1em;
+  padding-left: 7px;
 }
 
 #modal-content .form-actions input {
@@ -391,6 +391,10 @@ form .field-multiple-table th.field-label {
 .page-node-add-faculty .form-item {
   margin: 0;
   padding: 0;
+}
+.page-node-edit.node-type-faculty .form-item .form-type-radio,
+.page-node-add-faculty .form-item .form-type-radio {
+  margin: 3px 0;
 }
 .page-node-edit.node-type-faculty .view-display-id-eva_field_form .view-header,
 .page-node-add-faculty .view-display-id-eva_field_form .view-header {

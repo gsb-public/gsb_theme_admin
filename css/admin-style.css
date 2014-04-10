@@ -521,6 +521,10 @@ form .field-multiple-table th.field-label {
   vertical-align: top;
 }
 
+#field-authors-values input.form-submit {
+  display: block;
+}
+
 #faculty-node-form ul.horizontal-tabs-list {
   background-color: #f2f2f2;
 }

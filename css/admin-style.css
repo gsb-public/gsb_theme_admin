@@ -521,7 +521,8 @@ form .field-multiple-table th.field-label {
   vertical-align: top;
 }
 
-#field-authors-values input.form-submit {
+#field-authors-values input.form-submit,
+#field-stanford-gsb-affiliation-values input.form-submit {
   display: block;
 }
 

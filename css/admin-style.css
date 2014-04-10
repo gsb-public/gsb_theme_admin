@@ -28,7 +28,7 @@ input.form-text[disabled='disabled'] {
 }
 #modal-content .form-submit {
   cursor: pointer;
-  padding: 4px 17px;
+  padding: 0 17px;
   color: #5a5a5a;
   text-align: center;
   font: normal 1.077em/1 "Lucida Grande", Verdana, sans-serif;

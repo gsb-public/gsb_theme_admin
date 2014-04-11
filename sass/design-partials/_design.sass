@@ -466,3 +466,60 @@ form .field-multiple-table th.field-label
             background: #ffffff
         a
           color: #222222
+
+// Date field styling on book, media item, publication and working paper
+.group-publication-date,
+.group-posted-date
+  h3
+    font-size: 14px
+  .form-item
+    padding-top: 0
+  .field-name-field-month,
+  .field-name-field-pub-date-day,
+  .field-name-field-year-of-publication
+    display: inline-block
+    margin-right: 12px
+    vertical-align: top
+  // Remove extra year styling
+  .field-name-field-year-of-publication
+    fieldset
+      border: 0
+      padding: 0
+      margin: 0
+      #modal-content &
+        border: 0
+        margin-top: 0
+        margin-bottom: 0
+        padding: 0
+        top: 0
+      legend
+        margin-bottom: 2px
+        #modal-content &
+          background: none
+          border: 0
+          border-radius: 0
+          height: auto
+          line-height: 1
+          position: relative
+          left: 0
+          text-indent: 0
+          text-shadow: 0
+          top: 0
+      .fieldset-legend
+        margin: 0
+        padding: 0
+        position: relative
+        text-transform: none
+      .fieldset-wrapper
+        padding: 0
+        #modal-content &
+          margin-top: 0
+          padding-left: 0
+          padding-right: 0
+          padding-top: 0
+    .container-inline-date
+      .date-padding
+        float: none
+        padding: 0
+      > .form-item
+        margin: 0

@@ -555,3 +555,80 @@ form .field-multiple-table th.field-label {
 #faculty-node-form ul.horizontal-tabs-list li.selected a {
   color: #222222;
 }
+
+.group-publication-date h3,
+.group-posted-date h3 {
+  font-size: 14px;
+}
+.group-publication-date .form-item,
+.group-posted-date .form-item {
+  padding-top: 0;
+}
+.group-publication-date .field-name-field-month,
+.group-publication-date .field-name-field-pub-date-day,
+.group-publication-date .field-name-field-year-of-publication,
+.group-posted-date .field-name-field-month,
+.group-posted-date .field-name-field-pub-date-day,
+.group-posted-date .field-name-field-year-of-publication {
+  display: inline-block;
+  margin-right: 12px;
+  vertical-align: top;
+}
+.group-publication-date .field-name-field-year-of-publication fieldset,
+.group-posted-date .field-name-field-year-of-publication fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+#modal-content .group-publication-date .field-name-field-year-of-publication fieldset, #modal-content
+.group-posted-date .field-name-field-year-of-publication fieldset {
+  border: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  top: 0;
+}
+.group-publication-date .field-name-field-year-of-publication fieldset legend,
+.group-posted-date .field-name-field-year-of-publication fieldset legend {
+  margin-bottom: 2px;
+}
+#modal-content .group-publication-date .field-name-field-year-of-publication fieldset legend, #modal-content
+.group-posted-date .field-name-field-year-of-publication fieldset legend {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  height: auto;
+  line-height: 1;
+  position: relative;
+  left: 0;
+  text-indent: 0;
+  text-shadow: 0;
+  top: 0;
+}
+.group-publication-date .field-name-field-year-of-publication fieldset .fieldset-legend,
+.group-posted-date .field-name-field-year-of-publication fieldset .fieldset-legend {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-transform: none;
+}
+.group-publication-date .field-name-field-year-of-publication fieldset .fieldset-wrapper,
+.group-posted-date .field-name-field-year-of-publication fieldset .fieldset-wrapper {
+  padding: 0;
+}
+#modal-content .group-publication-date .field-name-field-year-of-publication fieldset .fieldset-wrapper, #modal-content
+.group-posted-date .field-name-field-year-of-publication fieldset .fieldset-wrapper {
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+.group-publication-date .field-name-field-year-of-publication .container-inline-date .date-padding,
+.group-posted-date .field-name-field-year-of-publication .container-inline-date .date-padding {
+  float: none;
+  padding: 0;
+}
+.group-publication-date .field-name-field-year-of-publication .container-inline-date > .form-item,
+.group-posted-date .field-name-field-year-of-publication .container-inline-date > .form-item {
+  margin: 0;
+}

@@ -16,9 +16,11 @@
 
     <div id="content" class="clearfix">
       <div class="element-invisible"><a id="main-content"></a></div>
+      <div id="console" class="clearfix">
       <?php if ($messages): ?>
-        <div id="console" class="clearfix"><?php print $messages; ?></div>
+        <?php print $messages; ?>
       <?php endif; ?>
+      </div>
       <?php if ($page['help']): ?>
         <div id="help">
           <?php print render($page['help']); ?>

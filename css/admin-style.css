@@ -1,3 +1,10 @@
+#console {
+  margin: 0;
+}
+#console .messages {
+  margin: 9px 0 16px;
+}
+
 input.form-text[disabled='disabled'] {
   background-color: #dddddd;
 }

@@ -19,4 +19,25 @@
       });
     }
   };
+
+  Drupal.behaviors.preventHorizontalFieldsetFocus = {
+    attach: function (context, settings) {
+      // Horizontal tabs are binding keydown that switches focus on fielset legend when hiting Enter, we don't want this.
+      $('.horizontal-tabs-processed', context).once('horizontal-tabs-override', function () {
+        var $fieldsets = $('> fieldset', this);
+        if ($fieldsets.length == 0) {
+          return;
+        }
+        $fieldsets.each(function () {
+          // Unbind horizontal-tabs.js behaviour and bind our own keydown to prevent for submission.
+          $(this).unbind('keydown').bind('keydown', function (event) {
+            if (event.keyCode == 13 && event.target.nodeName != "TEXTAREA") {
+              return false;
+            }
+          });
+        });
+      });
+    }
+  }
+
 }(jQuery));

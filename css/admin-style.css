@@ -546,3 +546,7 @@ form .field-multiple-table th.field-label {
 #faculty-node-form ul.horizontal-tabs-list li.selected a {
   color: #222222;
 }
+
+body.faculty-role .tabledrag-toggle-weight {
+  display: none;
+}

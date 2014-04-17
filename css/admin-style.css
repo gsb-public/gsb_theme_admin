@@ -638,3 +638,7 @@ form .field-multiple-table th.field-label {
 .group-posted-date .field-name-field-year-of-publication .container-inline-date > .form-item {
   margin: 0;
 }
+
+body.faculty-role .tabledrag-toggle-weight {
+  display: none;
+}

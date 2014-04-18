@@ -532,8 +532,12 @@ form .field-multiple-table th.field-label {
   vertical-align: top;
 }
 
+<<<<<<< HEAD
 #field-authors-values input.form-submit,
 #field-stanford-gsb-affiliation-values input.form-submit {
+=======
+.field-name-field-authors .form-submit {
+>>>>>>> WP-3391: adjust styling to be more general.
   display: block;
 }
 

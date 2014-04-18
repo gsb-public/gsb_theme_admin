@@ -521,7 +521,7 @@ form .field-multiple-table th.field-label {
   vertical-align: top;
 }
 
-#field-authors-values input.form-submit {
+.field-name-field-authors .form-submit {
   display: block;
 }
 

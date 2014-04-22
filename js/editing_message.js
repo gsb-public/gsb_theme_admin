@@ -2,52 +2,54 @@
 
   Drupal.behaviors.editingMessage = {
     attach: function () {
-      var $form = $('form.node-form');
-
-      // If the form had changed before a submission, mark it as changed now.
-      var $persistChangedValue = $form.find("[name='gsb_has_changed']");
-      if ($persistChangedValue.val()) {
-        $form.data('changed', true);
-      }
-
-      function markAsChanged () {
-        if (!$form.data('changed')) {
-          $form.data('changed', true);
-        }
-      }
-
-      // Track changes and input to all input elements.
-      $form.find(':input').not('.gsb-form-message-optout').once()
-        .on('change input', markAsChanged)
-        // Additionally, track clicks on "remove" buttons.
-        .filter("[data-gsb-form-type='remove_button']")
-          .on('mousedown', markAsChanged);
-
-      $form.submit(function () {
-        // If this form has been changed, persist that value.
-        if ($(this).data('changed')) {
-          $persistChangedValue.val(true);
-        }
-
-        // Allow the form submission to proceed.
-        $(this).data('changed', false);
+      // Loop through each form to set up editing tracking.
+      var $form = $('form.node-form').once(function () {
+        new Drupal.GsbThemeAdminEditing(this);
       });
 
-      // If the form has been changed but not submitted, confirm leaving.
-      function editingBeforeUnload (e){
-        if ($form.data('changed')) {
-          e = e || window.event;
-          e.returnValue = Drupal.t("You've made changes on one or more tabs. Click 'Save and Publish' to save all changes!");
-        }
-      }
-
-      if (window.attachEvent) {
-        window.attachEvent('onbeforeunload', editingBeforeUnload);
-      }
-      else if (window.addEventListener) {
-        window.addEventListener('beforeunload', editingBeforeUnload, true);
+      // Add the event listener to display a message before leaving the page.
+      if (window.addEventListener) {
+        window.addEventListener('beforeunload', function (e) {
+          // If the form has been changed but not submitted, confirm leaving.
+          if ($form.data('changed')) {
+            e = e || window.event;
+            e.returnValue = Drupal.t("You've made changes on one or more tabs. Click 'Save and Publish' to save all changes!");
+          }
+        }, true);
       }
     }
+  };
+
+  Drupal.GsbThemeAdminEditing = function (form) {
+    var $form = $(form);
+    // If the form had changed before a submission, mark it as changed now.
+    var $persistChangedValue = $form.find("[name='gsb_has_changed']");
+    if ($persistChangedValue.val()) {
+      $form.data('changed', true);
+    }
+
+    function markAsChanged () {
+      if (!$form.data('changed')) {
+        $form.data('changed', true);
+      }
+    }
+
+    // Track changes and input to all input elements.
+    $form.find(':input').not('.gsb-form-message-optout').once()
+      .on('change input', markAsChanged)
+      // Additionally, track clicks on "remove" buttons.
+      .filter("[data-gsb-form-type='remove_button']")
+      .on('mousedown', markAsChanged);
+
+    $form.submit(function () {
+      // If this form has been changed, persist that value.
+      if ($(this).data('changed')) {
+        $persistChangedValue.val(true);
+      }
+
+      // Allow the form submission to proceed.
+      $(this).data('changed', false);
+    });
   };
 
   /**

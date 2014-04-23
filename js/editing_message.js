@@ -1,5 +1,7 @@
 (function ($) {
 
+  var messageText = Drupal.t("You've made changes on one or more tabs. Click 'Save and Publish' to save all changes!");
+
   Drupal.behaviors.editingMessage = {
     attach: function () {
       // Loop through each form to set up editing tracking.
@@ -13,7 +15,7 @@
           // If the form has been changed but not submitted, confirm leaving.
           if ($form.data('changed')) {
             e = e || window.event;
-            e.returnValue = Drupal.t("You've made changes on one or more tabs. Click 'Save and Publish' to save all changes!");
+            e.returnValue = messageText;
           }
         }, true);
       }
@@ -31,6 +33,7 @@
     function markAsChanged () {
       if (!$form.data('changed')) {
         $form.data('changed', true);
+        $('#console').html('<div class="messages warning"><h2 class="element-invisible">' + Drupal.t('Warning message') + '</h2><p>' + messageText + '</p></div>');
       }
     }
 

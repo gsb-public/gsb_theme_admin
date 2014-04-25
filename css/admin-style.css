@@ -547,6 +547,6 @@ form .field-multiple-table th.field-label {
   color: #222222;
 }
 
-body.faculty-role .tabledrag-toggle-weight {
+body.role-faculty .tabledrag-toggle-weight {
   display: none;
 }

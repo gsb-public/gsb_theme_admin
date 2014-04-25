@@ -17,8 +17,12 @@ input.form-text[disabled='disabled'] {
   padding-left: 7px;
 }
 
-#modal-content .form-actions input {
-  margin: 10px 0 0 10px;
+#modal-content .form-actions {
+  clear: none;
+  float: none;
+  margin-left: 0;
+  text-align: left;
+  width: 100%;
 }
 #modal-content .fieldset-wrapper {
   padding-top: 3px;

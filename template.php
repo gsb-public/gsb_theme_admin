@@ -1,11 +1,19 @@
 <?php
 
+/**
+ * Preprocess the html.
+ */
 function gsb_theme_admin_preprocess_html(&$vars) {
   global $user;
-  if (in_array('Faculty', $user->roles)) {
-    $vars['classes_array'][] = 'faculty-role';
-  }
 
+  // Add roles to the body class.
+  foreach ($user->roles as $role) {
+    if ($role == 'authenticated user') {
+      continue;
+    }
+    $class = drupal_html_class('role-' . $role);
+    $vars['classes_array'][] = $class;
+  }
 }
 
 function gsb_theme_admin_form_panelizer_edit_content_form_alter(&$form, &$form_state, $form_id) {

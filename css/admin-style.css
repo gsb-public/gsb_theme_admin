@@ -639,6 +639,6 @@ form .field-multiple-table th.field-label {
   margin: 0;
 }
 
-body.faculty-role .tabledrag-toggle-weight {
+body.role-faculty .tabledrag-toggle-weight {
   display: none;
 }

@@ -453,6 +453,10 @@ form .field-multiple-table th.field-label {
 .page-node-add-faculty .modal-content .fieldset-legend {
   margin-top: 0 !important;
 }
+.page-node-edit.node-type-faculty .modal-content .field-name-field-research-databases,
+.page-node-add-faculty .modal-content .field-name-field-research-databases {
+  margin-top: 1em;
+}
 .page-node-edit.node-type-faculty .field-name-field-salutation,
 .page-node-edit.node-type-faculty .field-name-field-first-name,
 .page-node-edit.node-type-faculty .field-name-field-middle-name,

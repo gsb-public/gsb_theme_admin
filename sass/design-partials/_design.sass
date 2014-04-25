@@ -51,8 +51,6 @@ input.form-text[disabled='disabled']
       background: #FAFAFA
       +background-image(linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%))
 
-
-
 .modal-content .field-multiple-table
   width: 100%
   th label
@@ -536,3 +534,13 @@ form .field-multiple-table th.field-label
 body.role-faculty .tabledrag-toggle-weight
   display: none
 
+// Save buttons have more styles
+input[value="Save & Publish"],
+#modal-content input[value="Save & Publish"]
+  background: #0074bd
+  border-color: #607c8c
+  color: #fff
+  &:hover
+    background: #0074bd
+    border-color: #607c8c
+    color: #fff

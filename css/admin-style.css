@@ -646,3 +646,16 @@ form .field-multiple-table th.field-label {
 body.role-faculty .tabledrag-toggle-weight {
   display: none;
 }
+
+input[value="Save & Publish"],
+#modal-content input[value="Save & Publish"] {
+  background: #0074bd;
+  border-color: #607c8c;
+  color: white;
+}
+input[value="Save & Publish"]:hover,
+#modal-content input[value="Save & Publish"]:hover {
+  background: #0074bd;
+  border-color: #607c8c;
+  color: white;
+}

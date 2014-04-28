@@ -663,3 +663,12 @@ input[value="Save & Publish"]:hover,
   border-color: #607c8c;
   color: white;
 }
+
+.page-node-edit.node-type-faculty input[value="Upload"],
+.page-node-add-faculty input[value="Upload"],
+.page-node-add-book input[value="Upload"],
+.page-node-add-case input[value="Upload"],
+.page-node-add-publication input[value="Upload"],
+.page-node-add-working-paper input[value="Upload"] {
+  display: none;
+}

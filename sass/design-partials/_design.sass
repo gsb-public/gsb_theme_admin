@@ -19,37 +19,8 @@ input.form-text[disabled='disabled']
 
 // Panopoly modals
 #modal-content
-  .form-actions
-    clear: none
-    float: none
-    margin-left: 0
-    text-align: left
-    width: 100%
-  .fieldset-wrapper
-    padding-top: 3px
-  fieldset legend
-    height: 1.5em
-    line-height: 1.1em
-  .fieldset-wrapper
-    margin-top: 1.2em
   .widget-preview .fieldset-wrapper
     margin-top: 2.4em
-  // Override panopoly styles
-  .form-submit
-    cursor: pointer
-    padding: 0 17px
-    color: #5A5A5A
-    text-align: center
-    font: normal 1.077em/1 "Lucida Grande", Verdana, sans-serif
-    border: 1px solid #E4E4E4
-    border-bottom: 1px solid #B4B4B4
-    border-left-color: #D2D2D2
-    border-right-color: #D2D2D2
-    +box-shadow(none)
-    +border-radius(20px)
-    &:hover
-      background: #FAFAFA
-      +background-image(linear-gradient(bottom, #E9EAEC 0%, #FAFAFA 100%))
 
 .modal-content .field-multiple-table
   width: 100%
@@ -376,9 +347,6 @@ form .field-multiple-table th.field-label
     .field-multiple-table,
     .tabledrag-toggle-weight-wrapper
       max-width: 727px
-    // Labels on background
-    .fieldset-legend
-      margin-top: 0 !important
 
     // Working paper spacing
     .field-name-field-research-databases
@@ -496,25 +464,8 @@ form .field-multiple-table th.field-label
       border: 0
       padding: 0
       margin: 0
-      #modal-content &
-        border: 0
-        margin-top: 0
-        margin-bottom: 0
-        padding: 0
-        top: 0
       legend
         margin-bottom: 2px
-        #modal-content &
-          background: none
-          border: 0
-          border-radius: 0
-          height: auto
-          line-height: 1
-          position: relative
-          left: 0
-          text-indent: 0
-          text-shadow: 0
-          top: 0
       .fieldset-legend
         margin: 0
         padding: 0
@@ -522,11 +473,6 @@ form .field-multiple-table th.field-label
         text-transform: none
       .fieldset-wrapper
         padding: 0
-        #modal-content &
-          margin-top: 0
-          padding-left: 0
-          padding-right: 0
-          padding-top: 0
     .container-inline-date
       .date-padding
         float: none

@@ -6,6 +6,7 @@ core = 7.x
 base theme = seven
 
 ; Stylesheets
+stylesheets[screen][] = css/panopoly-modal.css
 stylesheets[screen][] = css/admin-style.css
 
 ; JavaScripts

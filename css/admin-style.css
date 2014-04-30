@@ -647,8 +647,8 @@ form .field-multiple-table th.field-label {
   margin: 0;
 }
 
-body.role-faculty .tabledrag-toggle-weight {
-  display: none;
+body.role-faculty .tabledrag-toggle-weight-wrapper {
+  visibility: hidden;
 }
 
 input[value="Save & Publish"],

@@ -664,11 +664,14 @@ input[value="Save & Publish"]:hover,
   color: white;
 }
 
-.page-node-edit.node-type-faculty input[value="Upload"],
-.page-node-add-faculty input[value="Upload"],
 .page-node-add-book input[value="Upload"],
 .page-node-add-case input[value="Upload"],
+.page-node-add-faculty input[value="Upload"],
 .page-node-add-publication input[value="Upload"],
 .page-node-add-working-paper input[value="Upload"] {
+  display: none;
+}
+
+.page-node-edit.node-type-book input[value="Upload"], .page-node-edit.node-type-case input[value="Upload"], .page-node-edit.node-type-faculty input[value="Upload"], .page-node-edit.node-type-publication input[value="Upload"], .page-node-edit.node-type-working-paper input[value="Upload"] {
   display: none;
 }

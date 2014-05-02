@@ -539,6 +539,10 @@ form .field-multiple-table th.field-label {
   margin-left: 5px;
   vertical-align: top;
 }
+.page-node-edit.node-type-faculty .node-media_item-form .form-item-title,
+.page-node-add-faculty .node-media_item-form .form-item-title {
+  margin-bottom: 1em;
+}
 
 .field-name-field-authors .form-submit {
   display: block;

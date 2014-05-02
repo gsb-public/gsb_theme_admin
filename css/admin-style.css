@@ -479,8 +479,8 @@ form .field-multiple-table th.field-label {
 .page-node-add-faculty .field-name-field-middle-name .description {
   max-width: 327px;
 }
-.page-node-edit.node-type-faculty #field-greater-university-affil-values .form-submit,
-.page-node-add-faculty #field-greater-university-affil-values .form-submit {
+.page-node-edit.node-type-faculty input[value="Remove affiliation"],
+.page-node-add-faculty input[value="Remove affiliation"] {
   display: block;
 }
 .page-node-edit.node-type-faculty .field-name-field-place-of-publication,

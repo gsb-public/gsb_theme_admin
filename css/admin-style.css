@@ -577,3 +577,9 @@ input[value="Save & Publish"]:hover,
 #node_publication_form_group_pub_link_pdf .fieldset-description {
   display: block;
 }
+
+.gsb-cmis-current-doc:after {
+  content: url('../images/arrow-external.svg');
+  display: inline-block;
+  margin-left: 3px;
+}

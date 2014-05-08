@@ -66,3 +66,13 @@ function gsb_theme_admin_element_info_alter(&$type) {
     $type['managed_file']['#process'][] = 'gsb_theme_admin_managed_file_process';
   }
 }
+/**
+ * Implements hook_preprocess_field_multiple_value_form().
+ */
+function gsb_theme_admin_preprocess_field_multiple_value_form(&$variables) {
+  foreach (element_children($variables['element']) as $child) {
+    if (isset($variables['element'][$child]['remove_button'])) {
+      $variables['element'][$child]['remove_button']['#attributes']['data-gsb-form-type'] = 'remove_button';
+    }
+  }
+}

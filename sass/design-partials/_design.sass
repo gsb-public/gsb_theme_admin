@@ -370,53 +370,6 @@ form .field-multiple-table th.field-label
   input[value="Remove affiliation"]
     display: block
 
-
-  // Publication fields alignment
-  // .field-name-field-pub-book-title,
-  .field-name-field-place-of-publication,
-  .field-name-field-publisher,
-  .field-name-field-volume-number,
-  .field-name-field-issue-number,
-  .field-name-field-page-count,
-  .group-pub-link-pdf .fieldset-wrapper > div
-    display: inline-block
-    margin-right: 12px
-    vertical-align: top
-  // .field-name-field-pub-book-title,
-  .field-name-field-place-of-publication
-    .description
-      max-width: 327px
-  // Pdf upload field
-  .group-pub-link-pdf .form-submit
-    height: 24px !important
-    line-height: 26px !important
-    margin-bottom: 0 !important
-    margin-left: 5px
-    vertical-align: top
-
-  // Publication fields alignment
-  // .field-name-field-pub-book-title,
-  .field-name-field-place-of-publication,
-  .field-name-field-publisher,
-  .field-name-field-volume-number,
-  .field-name-field-issue-number,
-  .field-name-field-page-count,
-  .group-pub-link-pdf .fieldset-wrapper > div
-    display: inline-block
-    margin-right: 12px
-    vertical-align: top
-  // .field-name-field-pub-book-title,
-  .field-name-field-place-of-publication
-    .description
-      max-width: 327px
-  // Pdf upload field
-  .group-pub-link-pdf .form-submit
-    height: 24px !important
-    line-height: 26px !important
-    margin-bottom: 0 !important
-    margin-left: 5px
-    vertical-align: top
-
   // Media item title spacing
   .node-media_item-form .form-item-title
     margin-bottom: 1em
@@ -516,3 +469,32 @@ input[value="Save & Publish"],
   &.node-type-working-paper
     input[value="Upload"]
       display: none
+
+// Create Journal article, book chapter, other author edits
+// Fields alignment
+.field-name-field-place-of-publication,
+.field-name-field-publisher,
+.field-name-field-volume-number,
+.field-name-field-issue-number,
+.field-name-field-page-count,
+.group-pub-link-pdf .fieldset-wrapper > div
+  display: inline-block
+  margin-right: 12px
+  vertical-align: top
+
+.field-name-field-place-of-publication
+  .description
+    max-width: 327px
+
+// Pdf or link upload field
+.group-pub-link-pdf .form-submit
+  height: 24px !important
+  line-height: 26px !important
+  margin-bottom: 0 !important
+  margin-left: 5px
+  vertical-align: top
+
+// Pdf or link description alignment
+#node_publication_form_group_pub_link_pdf
+  .fieldset-description
+    display: block

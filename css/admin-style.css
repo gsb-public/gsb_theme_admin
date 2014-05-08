@@ -606,3 +606,9 @@ input[value="Save & Publish"]:hover,
 .page-node-edit.node-type-book input[value="Upload"], .page-node-edit.node-type-case input[value="Upload"], .page-node-edit.node-type-faculty input[value="Upload"], .page-node-edit.node-type-publication input[value="Upload"], .page-node-edit.node-type-working-paper input[value="Upload"] {
   display: none;
 }
+
+.gsb-cmis-current-doc:after {
+  content: url('../images/arrow-external.svg');
+  display: inline-block;
+  margin-left: 3px;
+}

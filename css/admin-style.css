@@ -566,14 +566,6 @@ input[value="Save & Publish"]:hover,
   max-width: 327px;
 }
 
-.group-pub-link-pdf .form-submit {
-  height: 24px !important;
-  line-height: 26px !important;
-  margin-bottom: 0 !important;
-  margin-left: 5px;
-  vertical-align: top;
-}
-
 #node_publication_form_group_pub_link_pdf .fieldset-description {
   display: block;
 }

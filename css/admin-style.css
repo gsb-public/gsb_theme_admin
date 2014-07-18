@@ -576,10 +576,10 @@ input[value="Save & Publish"]:hover,
   margin-left: 3px;
 }
 
-#idea-story-node-form .field-name-field-icon .form-type-radio {
+.field-name-field-icon .form-type-radio {
   display: inline-block;
   margin-right: 26px;
 }
-#idea-story-node-form .field-name-field-icon .form-type-radio:last-of-type {
+.field-name-field-icon .form-type-radio:last-of-type {
   margin-right: 0;
 }

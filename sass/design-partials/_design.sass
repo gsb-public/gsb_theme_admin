@@ -505,3 +505,21 @@ input[value="Save & Publish"],
   margin-right: 26px
   &:last-of-type
     margin-right: 0
+
+
+// Chute
+.chute-url-icon
+  &:after
+    position: relative
+    left: 6px
+    top: 4px
+
+// Alert icons for the chute link validation - invalid
+.chute-invalid-url
+  &:after
+    content: image_url("/misc/message-16-warning.png")
+
+// Alert icons for the chute link validation - valid
+.chute-valid-url
+  &:after
+    content: image_url("/misc/message-16-ok.png")

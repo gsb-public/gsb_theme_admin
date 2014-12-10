@@ -583,3 +583,17 @@ input[value="Save & Publish"]:hover,
 .field-name-field-icon .form-type-radio:last-of-type {
   margin-right: 0;
 }
+
+.chute-url-icon:after {
+  position: relative;
+  left: 6px;
+  top: 4px;
+}
+
+.chute-invalid-url:after {
+  content: url(/misc/message-16-warning.png);
+}
+
+.chute-valid-url:after {
+  content: url(/misc/message-16-ok.png);
+}

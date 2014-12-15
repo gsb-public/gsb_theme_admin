@@ -597,3 +597,7 @@ input[value="Save & Publish"]:hover,
 .chute-valid-url:after {
   content: url(/misc/message-16-ok.png);
 }
+
+#alumni-reunion-agenda-item-node-form .form-item-field-event-date-und-0-show-repeat-settings {
+  display: none;
+}

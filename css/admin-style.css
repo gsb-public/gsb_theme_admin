@@ -601,3 +601,17 @@ input[value="Save & Publish"]:hover,
 #alumni-reunion-agenda-item-node-form .form-item-field-event-date-und-0-show-repeat-settings {
   display: none;
 }
+
+#resources-edit-form .field-name-field-body .markItUpEditor {
+  height: auto;
+  margin-left: 16.3em;
+  margin-right: 5em;
+  width: 859px;
+}
+
+div.ctools-modal-content {
+  overflow: hidden;
+}
+div.ctools-modal-content .modal-content {
+  padding: 0 1em;
+}

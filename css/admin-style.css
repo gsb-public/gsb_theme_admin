@@ -602,7 +602,7 @@ input[value="Save & Publish"]:hover,
   display: none;
 }
 
-#resources-edit-form .field-name-field-body .markItUpEditor {
+#resources-edit-form .markItUpEditor {
   height: auto;
   margin-left: 16.3em;
   margin-right: 5em;

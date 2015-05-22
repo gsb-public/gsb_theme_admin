@@ -530,14 +530,17 @@ input[value="Save & Publish"],
     display: none
 
 // Adjust markdown field in resource editor
+#resources-add-form .markItUpEditor,
 #resources-edit-form .markItUpEditor
-  height: auto
   margin-left: 16.3em
   margin-right: 5em
-  width: 859px
+  min-height: 100px
+  width: 700px
 
 // Hide overflow of modal
 div.ctools-modal-content
   overflow: hidden
   .modal-content
     padding: 0 1em
+  .resizable-textarea
+    max-width: 700px

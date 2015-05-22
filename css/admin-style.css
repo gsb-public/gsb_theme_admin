@@ -602,11 +602,12 @@ input[value="Save & Publish"]:hover,
   display: none;
 }
 
+#resources-add-form .markItUpEditor,
 #resources-edit-form .markItUpEditor {
-  height: auto;
   margin-left: 16.3em;
   margin-right: 5em;
-  width: 859px;
+  min-height: 100px;
+  width: 700px;
 }
 
 div.ctools-modal-content {
@@ -614,4 +615,7 @@ div.ctools-modal-content {
 }
 div.ctools-modal-content .modal-content {
   padding: 0 1em;
+}
+div.ctools-modal-content .resizable-textarea {
+  max-width: 700px;
 }

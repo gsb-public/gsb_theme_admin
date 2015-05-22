@@ -33,6 +33,9 @@ function gsb_theme_admin_file_icon($variables) {
  * Implements hook_form_BASE_FORM_ID_alter() for node_form.
  */
 function gsb_theme_admin_form_node_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#bundle'] != 'faculty') {
+    return;
+  }  
   // Make the title field 140 characters wide.
   if (isset($form['title'])) {
     $form['title']['#size'] = 140;

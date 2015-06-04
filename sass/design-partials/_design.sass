@@ -288,9 +288,8 @@ form .field-multiple-table th.field-label
     margin-bottom: 0
     padding: 0
 
-////////////////////
+
 // Faculty changes
-////////////////////
 
 .page-node-edit.node-type-faculty,
 .page-node-add-faculty
@@ -454,18 +453,28 @@ input[value="Save & Publish"],
     color: #fff
 
 // Hide upload buttons
+.page-node-add-act,
+.page-node-add-alumni-reunion-agenda-item,
+.page-node-add-announcement,
 .page-node-add-book,
 .page-node-add-case,
 .page-node-add-faculty,
+.page-node-add-idea-story,
 .page-node-add-publication,
+.page-node-add-school-story,
 .page-node-add-working-paper
   input[value="Upload"]
     display: none
 .page-node-edit
+  &.node-type-act,
+  &.node-type-alumni-reunion-agenda-item,
+  &.node-type-announcement,
   &.node-type-book,
   &.node-type-case,
   &.node-type-faculty,
+  &.node-type-idea-story,
   &.node-type-publication,
+  &.node-type-school-story,
   &.node-type-working-paper
     input[value="Upload"]
       display: none

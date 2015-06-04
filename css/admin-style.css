@@ -619,3 +619,16 @@ div.ctools-modal-content .modal-content {
 div.ctools-modal-content .resizable-textarea {
   max-width: 700px;
 }
+
+.checkall-action {
+  margin: 5px 0;
+}
+.checkall-action a {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.checkall-action a:first-of-type {
+  margin-right: 12px;
+}

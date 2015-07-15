@@ -637,3 +637,12 @@ div.ctools-modal-content .resizable-textarea {
 .checkall-action a:first-of-type {
   margin-right: 12px;
 }
+
+.street-block,
+.locality-block {
+  max-width: 264px;
+}
+
+.form-item-field-event-location-und-0-field-address-und-0-postal-code {
+  max-width: 60px;
+}

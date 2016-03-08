@@ -81,22 +81,4 @@ function gsb_theme_admin_preprocess_field_multiple_value_form(&$variables) {
 }
 
 function gsb_theme_admin_preprocess_views_view_field(&$vars) {
-  if (!empty($vars['field']) && $vars['field']->field == 'field_display_on_finder') {
-    $nid = $vars['row']->nid;
-    $checked_value = $vars['field']->advanced_render($vars['row']);
-    $checked = '';
-    if ($checked_value == '1') {
-      $checked = 'checked';
-    }
-    $vars['output'] = '<input type="checkbox" class="gsb-program-instance-ct-display-on-finder" data-nid="' . $nid . '"' . $checked . ' />';
-  }
-  if (!empty($vars['field']) && $vars['field']->field == 'field_is_application_open') {
-    $nid = $vars['row']->nid;
-    $checked_value = $vars['field']->advanced_render($vars['row']);
-    $checked = '';
-    if ($checked_value == '1') {
-      $checked = 'checked';
-    }
-    $vars['output'] = '<input type="checkbox" class="gsb-program-instance-ct-application-open" data-nid="' . $nid . '"' . $checked . ' />';
-  }
 }

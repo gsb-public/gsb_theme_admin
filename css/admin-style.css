@@ -624,6 +624,11 @@ div.ctools-modal-content .modal-content {
 div.ctools-modal-content .resizable-textarea {
   max-width: 700px;
 }
+div.ctools-modal-content .form-item label {
+  margin-right: 10px;
+  min-width: 10em;
+  width: inherit;
+}
 
 .checkall-action {
   margin: 5px 0;

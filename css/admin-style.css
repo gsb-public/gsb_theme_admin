@@ -5,6 +5,10 @@
   margin: 9px 0 16px;
 }
 
+fieldset .fieldset-legend {
+  text-transform: capitalize;
+}
+
 input.form-text[disabled='disabled'] {
   background-color: #dddddd;
 }
@@ -330,7 +334,6 @@ form .field-multiple-table th.field-label {
   margin-bottom: 0;
 }
 .node-type-publication #node_publication_form_group_publication_date .field-name-field-year-of-publication .fieldset-legend {
-  text-transform: capitalize;
   margin-bottom: 0;
   padding: 0;
 }
@@ -506,7 +509,6 @@ form .field-multiple-table th.field-label {
   margin: 0;
   padding: 0;
   position: relative;
-  text-transform: none;
 }
 .group-publication-date .field-name-field-year-of-publication fieldset .fieldset-wrapper,
 .group-posted-date .field-name-field-year-of-publication fieldset .fieldset-wrapper {
@@ -625,7 +627,7 @@ div.ctools-modal-content .resizable-textarea {
   max-width: 700px;
 }
 div.ctools-modal-content .form-item label {
-  margin-right: 10px;
+  margin-right: 3em;
   min-width: 10em;
   width: inherit;
 }

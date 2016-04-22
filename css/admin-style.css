@@ -33,7 +33,7 @@ input.form-text[disabled='disabled'] {
   margin-bottom: 0;
 }
 .modal-content .field-multiple-table .form-submit {
-  margin-top: 5px;
+  margin: 5px 0;
 }
 
 .page-node-add .form-type-radio input {

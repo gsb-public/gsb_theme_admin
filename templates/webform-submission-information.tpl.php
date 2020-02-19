@@ -18,7 +18,7 @@
   <div class="webform-submission-info-text">
     <div><?php print t('Form: !form', array('!form' => l($node->title, 'node/' . $node->nid))); ?></div>
     <div><?php print t('Submitted by !name', array('!name' => theme('username', array('account' => $account)))); ?></div>
-    <div><?php print check_plain(format_date($submission->submitted, webform_variable_get('webform_date_type'))); ?></div>
+    <div><?php print check_plain(format_date($submission->submitted, webform_variable_get('webform_date_type'), t('F j, Y - g:ia', array(), array('context' => 'date')), drupal_get_user_timezone())); ?></div>
     <div><?php print check_plain($submission->remote_addr); ?></div>
   </div>
 </fieldset>
